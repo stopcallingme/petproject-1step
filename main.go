@@ -25,7 +25,7 @@ func main() {
 	http.ListenAndServe(":8080", nil)
 }
 
-// Handler для GET и POST
+// Ручка GET и POST
 func tasksHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
@@ -55,7 +55,7 @@ func tasksHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// Handler для PATCH и DELETE (по ID)
+// Ручка PATCH и DELETE (по ID)
 func taskByIDHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
