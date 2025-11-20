@@ -55,7 +55,7 @@ func tasksHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// Handler для PATCH и DELETE по ID
+// Handler для PATCH и DELETE (по ID)
 func taskByIDHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
